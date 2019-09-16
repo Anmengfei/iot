@@ -11,6 +11,7 @@ public class LockerApplicationTests {
 
     @Test
     public void contextLoads() {
+        
     }
 
 }
