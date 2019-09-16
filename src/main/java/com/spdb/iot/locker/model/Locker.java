@@ -19,7 +19,7 @@ import java.util.Date;
  * @author xiecf
  */
 @Entity
-@Table(name = "Category")
+@Table(name = "Locker")
 @Wither
 @Setter
 @Getter
@@ -32,13 +32,17 @@ public class Locker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     @NotNull
     private String lockerNo;
+
     @NotNull
     private String dealer;
+
     @NotBlank
     private String supervisor;
 
+    @NotNull
     private Integer active;
 
     private Date heartbeat_time;
