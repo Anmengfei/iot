@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  datasource:
+    url: jdbc:mysql://localhost:3306/iot?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    platform: mysql
+    username: root
+    password: 193816xcf
+    driverClassName: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+
+
