@@ -33,10 +33,10 @@ public class Locker {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotNull
+    @NotBlank
     private String lockerNo;
 
-    @NotNull
+    @NotBlank
     private String dealer;
 
     @NotBlank
