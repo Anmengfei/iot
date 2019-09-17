@@ -26,10 +26,10 @@ public class LockerRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotBlank
+    @NotNull
     private Integer locker_box_id;
 
-    @NotBlank
+    @NotNull
     private Date record_time;
 
     @NotBlank

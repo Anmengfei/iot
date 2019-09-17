@@ -8,6 +8,7 @@ import lombok.experimental.Wither;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "LockerBox")
@@ -24,7 +25,7 @@ public class LockerBox {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotBlank
+    @NotNull
     private Integer lockerId;
 
     @NotBlank

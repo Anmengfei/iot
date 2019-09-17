@@ -8,6 +8,7 @@ import lombok.experimental.Wither;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -28,10 +29,10 @@ public class LockerQrcode {
     @NotBlank
     private String validated_str;
 
-    @NotBlank
+    @NotNull
     private Integer used;
 
-    @NotBlank
+    @NotNull
     private Date generated_time;
 
     private Date validated_time;
